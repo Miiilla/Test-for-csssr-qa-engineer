@@ -1,0 +1,199 @@
+{
+  "id": "b05eef3e-3caa-499a-b38f-ffabf8bad684",
+  "version": "2.0",
+  "name": "Test quest",
+  "url": "http://blog.csssr.ru/qa-engineer/",
+  "tests": [{
+    "id": "8ac6b3ae-e19d-4248-8b28-5ded0387b705",
+    "name": "test quest",
+    "commands": [{
+      "id": "81ca71dd-b6f5-459a-b2de-b53dd648d0f9",
+      "comment": "",
+      "command": "open",
+      "target": "http://blog.csssr.ru/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "152c2f66-b9d0-48ad-be0b-b16d28abc7f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e43b7c0a-0932-4aae-b124-1430d279dfa2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff86a5e-cf85-48be-ad67-05980dfb0842",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors > h1",
+      "targets": [
+        ["css=.info-errors > h1", "css:finder"],
+        ["xpath=//section[2]/div[2]/h1", "xpath:position"]
+      ],
+      "value": "Находить баги и несоответствия исходному дизайну в верстке наших проектов. Тестировать их с точки зрения удобства для пользователя. И указывать разработчикам на несовершенства."
+    }, {
+      "id": "dfb7819b-d064-44fb-87fb-cc1f12937564",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors > article:nth-child(2)",
+      "targets": [
+        ["css=.info-errors > article:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/article", "xpath:position"]
+      ],
+      "value": "ДЛЯ ЧЕГО ЭТО НУЖНО?\\nВ CSSSR внедрен высокий станадрт качества. Если мы верстаем сайт, это значит, что он будет одинаково хорошо отображаться во всех заявленных браузерах, на нем будут самые красивые эффекты, а поведение всех элементов страниц будет предсказуемым и приятным для пользователя."
+    }, {
+      "id": "b58fac59-070d-45be-800c-b51978be30b7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors > article:nth-child(3)",
+      "targets": [
+        ["css=.info-errors > article:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/article[2]", "xpath:position"]
+      ],
+      "value": "КАК ЭТО ДЕЛАЕТСЯ?\\nКачество наших сайтов — это внимание к мелочам и деталям. Ассистенты менеджера последовательно отсматривают все проекты и указывают разработчикам на ошибки, расхождения с макетами и возможные улучшения. Так происходит до тех пор, пока шаблоны сайта не станут идеальными."
+    }, {
+      "id": "bb53311f-2416-4def-8075-39f23c40f2d4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors h3",
+      "targets": [
+        ["css=.info-errors h3", "css:finder"],
+        ["xpath=//div[2]/aside/h3", "xpath:position"]
+      ],
+      "value": "ПОТРЕБУЕТСЯ"
+    }, {
+      "id": "1d62c3d8-d3b5-4983-906c-b8d4af781d8a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors li:nth-child(1) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(1) > label", "css:finder"],
+        ["xpath=//div[2]/aside/ul/li/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Идеальный глазомер')]", "xpath:innerText"]
+      ],
+      "value": "Идеальный глазомер"
+    }, {
+      "id": "6a1bb548-0d7a-45d2-91e4-b69fcf7a0b92",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors li:nth-child(2) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/aside/ul/li[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Чувство прекрасного')]", "xpath:innerText"]
+      ],
+      "value": "Чувство прекрасного"
+    }, {
+      "id": "a3df65bf-f1c4-4fc6-859c-a99c1432cda5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.info-errors li:nth-child(3) > label",
+      "targets": [
+        ["css=.info-errors li:nth-child(3) > label", "css:finder"],
+        ["xpath=//li[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Умение четко формулировать задачи')]", "xpath:innerText"]
+      ],
+      "value": "Умение четко формулировать задачи"
+    }, {
+      "id": "82b65093-8289-45da-8e83-6b2539b44a76",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Софт для быстрого создания скриншотов",
+      "targets": [
+        ["linkText=Софт для быстрого создания скриншотов", "linkText"],
+        ["css=label > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Софт для быстрого создания скриншотов')]", "xpath:link"],
+        ["xpath=//a[@href='http://app.prntscr.com/ru/']", "xpath:href"],
+        ["xpath=//label/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Софт для быстрого создания скриншотов')]", "xpath:innerText"]
+      ],
+      "value": "Софт для быстрого создания скриншотов"
+    }, {
+      "id": "f2f9e6c0-ac5b-41d2-adcd-48c1bff5992e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a0d09c0-ffc2-4b88-b3a9-5b56e53cb5c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors > h1",
+      "targets": [],
+      "value": "Находить баги и несоответствия исходному дизайну в верстке наших проектов. Тестировать их с точки зрения удобства для пользователя. И указывать разработчикам на несовершенства."
+    }, {
+      "id": "8cd8d512-79c8-472b-bf73-6f6af6c03cf8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors > article:nth-child(2)",
+      "targets": [],
+      "value": "ДЛЯ ЧЕГО ЭТО НУЖНО?\\nВ CSSSR внедрен высокий станадрт качества. Если мы верстаем сайт, это значит, что он будет одинаково хорошо отображаться во всех заявленных браузерах, на нем будут самые красивые эффекты, а поведение всех элементов страниц будет предсказуемым и приятным для пользователя."
+    }, {
+      "id": "f50432d7-6e16-42c2-b695-5106c2e73c47",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors > article:nth-child(3)",
+      "targets": [],
+      "value": "КАК ЭТО ДЕЛАЕТСЯ?\\nКачество наших сайтов — это внимание к мелочам и деталям. Ассистенты менеджера последовательно отсматривают все проекты и указывают разработчикам на ошибки, расхождения с макетами и возможные улучшения. Так происходит до тех пор, пока шаблоны сайта не станут идеальными."
+    }, {
+      "id": "d8e08a1e-1d5d-4d10-a4ef-604f8760d2b6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors h3",
+      "targets": [],
+      "value": "ПОТРЕБУЕТСЯ"
+    }, {
+      "id": "67ea57fd-ce2e-4a0f-a791-18864d11fe62",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors li:nth-child(2) > label",
+      "targets": [],
+      "value": "Чувство прекрасного"
+    }, {
+      "id": "1183c7fe-a26b-4916-8e19-907e52d36e0b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-errors li:nth-child(3) > label",
+      "targets": [],
+      "value": "Умение четко формулировать задачи"
+    }, {
+      "id": "aed48bad-509a-49be-b90d-063d96f8067a",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Софт для быстрого создания скриншотов",
+      "targets": [],
+      "value": "Софт для быстрого создания скриншотов"
+    }]
+  }],
+  "suites": [{
+    "id": "cffdb11f-18e0-414a-9112-2332cd4dec8b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8ac6b3ae-e19d-4248-8b28-5ded0387b705"]
+  }],
+  "urls": ["http://blog.csssr.ru/qa-engineer/"],
+  "plugins": []
+}
